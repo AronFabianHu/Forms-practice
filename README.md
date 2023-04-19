@@ -1,2 +1,2 @@
 # Forms-practice
-Its my firs practicing project about forms.
+Its my practicing project about forms.
