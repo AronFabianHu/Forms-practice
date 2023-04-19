@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race registration form</title>
+</head>
+
+<body>
+
+    <h1>Race Registration!</h1>
+    <form action="/Forms-practice/Successful-registration.html">
+
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="First" id="firstname" placeholder="Your First Name" required>
+            <label for="lastname"> Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Your Last Name" required>
+        </div>
+
+        <br>
+
+        <div>
+            Select a Race:
+        </div>
+
+        <br>
+
+        <div>
+            <div>
+                <input type="radio" name="race" id="FunRun5k" required>
+                <label for="FunRun5k">Fun Run 5k</label>
+            </div>
+            <div><input type="radio" name="race" id="halfmarathon" required>
+                <label for="halfmarathon">Half Marathon</label>
+            </div>
+            <div>
+                <input type="radio" name="race" id="fullmarathon" required>
+                <label for="fullmarathon">full Marathon</label>
+            </div>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+                placeholder="Your Email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[\W_]).{7,}"
+                title="Minimum of 7 characters. Should have at least one special character and one number."
+                placeholder="Your Password" required>
+        </div>
+        <div>
+            <label for="agegroup">Select Age Group</label>
+            <select name="age_group" id="agegroup" required>
+                <option value="">--Please choose an option--</option>
+                <option value="under18">under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+        <div>
+            <button>Register!</button>
+        </div>
+    </form>
+    <hr>
+    <button><a href="/Forms-practice/index.html">Back to Home</a></button>
+    <hr>
+    <footer>
+        <h2>Author</h2>
+        <p>
+            Made by <a href="https://levelupmarketing.hu"> Aron Fabian</a> web developer
+        </p>
+    </footer>
+
+</body>
+
+</html>
