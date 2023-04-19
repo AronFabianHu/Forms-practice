@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form demo</title>
+</head>
+
+<body>
+
+    <h1>Forms demo</h1>
+    <h2> Submit form</h2>
+    <form action="/tacos">
+        <p> <label for="username">Enter a Username</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color"> Enter a Color</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label>
+                Enter a Number
+                <input type="number" placeholder="number" name="num" min="1" max="1000">
+            </label>
+        </p>
+
+        <p>
+            <button type="button"> Submit </button>
+            <input type="submit" value="Submit2">
+        </p>
+    </form>
+    <hr>
+    <button>Outside button</button>
+    <hr>
+
+
+
+    <h2>More forms</h2>
+    <form action="/birds">
+        <p><input type="checkbox" name="aggre_tos" id="agree" checked>
+            <label for="agree">I agree to everything</label>
+
+        </p>
+        <p>
+        <fieldset>
+            <legend>T-shit sizes</legend>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </fieldset>
+        </p>
+
+        <p>
+
+            <label for="meal"> Please select a meal type</label>
+            <br>
+            <select name="meal" id="meal">
+                <option value="" selected>--Please choose an option--</option>
+                <option value="Fish">Fish</option>
+                <option value="Veg">Vegetarian</option>
+                <option value="Stake">Stake</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <br>
+            <input type="range" name="cheese_level" id="cheese" min="0" max="10" step="5">
+
+        </p>
+        <p>
+            <label for="request">Any special request?</label>
+            <br>
+            <textarea name="" id="request" cols="30" rows="10" placeholder="Please type here your requests"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <p>
+            <label for="first">Enter First Name</label>
+            <input type="text" name="First" id="First" required>
+        </p>
+        <p>
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username" minlength="5" maxlength="20" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password" pattern="(?=.*\d)(?=.*[\W_]).{7,}"
+                title="Minimum of 7 characters. Should have at least one special character and one number." required>
+        </p>
+        <button>Submit</button>
+
+    </form>
+    <hr>
+    <button><a href="/index.html">Back to Home</a></button>
+    <hr>
+    <footer>
+        <h2>Author</h2>
+        <p>
+            Made by <a href="https://levelupmarketing.hu"> Aron Fabian</a> web developer
+        </p>
+    </footer>
+</body>
+
+</html>
